@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: docker
+#    image: php:7.3-apache
+#    command:
+#      - export APACHE_DOCUMENT_ROOT=/var/www/html/web
+#      - sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+#      - sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www/html
