@@ -16,3 +16,6 @@ docker-compose exec web composer require yiisoft/yii2
 
 # install yii2-bootstrap4
 docker-compose exec web composer require yiisoft/yii2-bootstrap4
+
+# install yii2-debug
+docker-compose exec web composer require yiisoft/yii2-debug

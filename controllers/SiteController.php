@@ -20,4 +20,9 @@ class SiteController extends Controller
     {
         return $this->render('login');
     }
+
+    public function actionInfo()
+    {
+        return phpinfo();
+    }
 }

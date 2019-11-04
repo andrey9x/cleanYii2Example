@@ -11,6 +11,16 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false
+        ],
+        'request' => [
+            'cookieValidationKey' => 'ds3jklj92ioJnjr33kBbnBgTY3rf',
+        ]
+    ],
+    'bootstrap' => ['debug'],
+    'modules' => [
+        'debug' => [
+            'class' => \yii\debug\Module::class,
+            'allowedIPs' => ['*'],
         ]
     ]
 ];
