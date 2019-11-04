@@ -1,5 +1,6 @@
 <?php
 
+use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 
 /**
@@ -20,8 +21,16 @@ use yii\bootstrap4\NavBar;
         'brandLabel' => 'PHP',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-light bg-light fixed-top'
+            'class' => 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top'
         ]
+    ]);
+    $menu = [
+        ['label' => 'Join', 'url' => ['site/join']],
+        ['label' => 'Login', 'url' => ['site/login']]
+    ];
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav ml-auto'],
+        'items' => $menu
     ]);
     NavBar::end();
     ?>
